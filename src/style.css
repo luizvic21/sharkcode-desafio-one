@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.container-main {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+        'header'
+        'login'
+    ;
+}
+
+.container-main .container-header {
+    grid-area: header;
+    background: #E14B56;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 35px;
+    padding-right: 21px;
+}
+
+.container-main .container-header .image-principal {
+    display: none;
+}
+
+.container-main .container-header .label-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 26px;
+    color: #FFF;
+}
+
+.container-main .container-header .label-description {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFF;
+    letter-spacing: 0.18em;
+    margin-top: 39px;
+}
+
+.container-main .contatiner-login {
+    grid-area: login;
+    background: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    padding-left: 35px;
+    padding-right: 25px;
+    height: 100%;
+}
+
+.container-main .contatiner-login .container-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-main .contatiner-login .label-login {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    color: #027373;
+    margin-top: 55px;
+}
+
+.container-main .contatiner-login .container-form .label-input {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #9C98A6;
+}
+
+.container-main .contatiner-login .container-form .input-email {
+    background: #FAFAFC;
+    border: 1px solid #E6E6F0;
+    box-sizing: border-box;
+    border-radius: 8px 8px 0px 0px;
+    width: auto;
+    height: 63.14px;
+    margin-top: 18px;
+}
+
+.container-main .contatiner-login .container-form .input-password {
+    background: #FAFAFC;
+    border: 1px solid #E6E6F0;
+    box-sizing: border-box;
+    border-radius: 0px 0px 8px 8px;
+    width: auto;
+    height: 63.14px;
+}
+
+.container-main .contatiner-login .container-form .container-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    align-items: center;
+}
+
+.container-main .contatiner-login .container-form .container-options .container-checkbox {
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+
+.container-main .contatiner-login .container-form .container-options .label-options {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    color: #9C98A6;
+}
+
+.container-main .contatiner-login .container-form .container-options .label-lembra-me {
+    margin-left: 10px;
+}
+
+.container-main .contatiner-login .container-form .container-options .container-checkbox input[type=checkbox] {
+    width: 26.5px;
+    height: 23.68px;
+    background: #FFFFFF;
+    border: 1px solid #E6E6F0 !important;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.container-main .contatiner-login .container-form .container-options .container-checkbox input[type=checkbox]:checked {
+    background: #027373;
+    border: #027373;
+    border-radius: 8px;
+}
+
+.container-main .contatiner-login .container-form .button-entrar {
+    width: auto;
+    height: 55.25px;
+    background: #027373;
+    border-radius: 8px;
+    font-family: Archivo;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    border-color: transparent;
+    margin-top: 20px;
+}
+
+.container-main .contatiner-login .container-form .button-entrar:disabled {
+    background: #DCDCE5;
+    border-radius: 8px;
+    color: #9C98A6;
+}

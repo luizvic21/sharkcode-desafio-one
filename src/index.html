@@ -3,21 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Monitora</title>
+    <link rel="stylesheet"  href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Monitora.com</h1>
-    <h2>Tornando seu monitoramento mas descomplicado</h2>
-    <img src="../images/svg/ImagemDesafio2.svg" alt="logo-monitora" title="Logo da monitora">
-    <h2>Fazer login</h2>
-    <form>
-        <label for="email">E-mail</label>
-        <input type="email" name="email" id="email">
-        <label for="email">Senha</label>
-        <input type="password" name="senha" id="password">
-        <input type="checkbox" name="lembrarMe" id="lembrarMe" value="lembrarMe">
-        <label for="lembraMe">Lembrar-me</label>
-        <label>Esqueci minha senha</label>
-        <input type="submit" value="Entrar">
-    </form>
+    <div class="container-main">
+        <div class="container-header">
+            <span class="label-title">Monitora.com</span>
+            <span class="label-description">Tornando seu monitoramento mais descomplicado</span>
+            <img class="image-principal" src="../images/svg/ImagemDesafio2.svg" alt="logo-monitora" title="Logo da monitora">
+        </div>
+        <div class="contatiner-login">
+            <span class="label-login">Fazer login</span>
+            <form class="container-form">
+                <!-- <label class="label-input" for="email">E-mail</label> -->
+                <input class="input-email" type="email" name="email" id="email">
+                <!-- <label class="label-input" for="email">Senha</label> -->
+                <input class="input-password" type="password" name="senha" id="password">
+                <div class="container-options">
+                    <div class="container-checkbox">
+                        <input class="input-checkbox" type="checkbox" name="lembrarMe" id="lembrarMe" value="lembrarMe">
+                        <label class="label-options label-lembra-me" for="lembraMe">Lembrar-me</label>
+                    </div>
+                    <label class="label-options">Esqueci minha senha</label>
+                </div>
+                <input class="button-entrar" type="submit" value="Entrar">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
