@@ -4,156 +4,206 @@
     box-sizing: border-box; 
 }
 
-.container-main {
+input {
+    font-family: Popins;
+    font-size: 1.8rem;
+    color: #C1BCCC;
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    font-family: Poppins;
+    font-size: 62.5%;
+}
+
+#page-login {
     width: 100vw;
     height: 100vh;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 100%;
-    grid-template-areas: 
-        'header'
-        'login'
-    ;
+    display: flex;
 }
 
-.container-main .container-header {
-    grid-area: header;
+#page-login header {
+    width: 64%;
     background: #E14B56;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-left: 35px;
-    padding-right: 21px;
-}
-
-.container-main .container-header .image-principal {
-    display: none;
-}
-
-.container-main .container-header .label-title {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 26px;
-    color: #FFF;
-}
-
-.container-main .container-header .label-description {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 21px;
-    color: #FFF;
-    letter-spacing: 0.18em;
-    margin-top: 39px;
-}
-
-.container-main .contatiner-login {
-    grid-area: login;
-    background: #E5E5E5;
-    display: flex;
-    flex-direction: column;
-    padding-left: 35px;
-    padding-right: 25px;
-    height: 100%;
-}
-
-.container-main .contatiner-login .container-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.container-main .contatiner-login .label-login {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 34px;
-    color: #027373;
-    margin-top: 55px;
-}
-
-.container-main .contatiner-login .container-form .label-input {
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    line-height: 24px;
-    color: #9C98A6;
-}
-
-.container-main .contatiner-login .container-form .input-email {
-    background: #FAFAFC;
-    border: 1px solid #E6E6F0;
-    box-sizing: border-box;
-    border-radius: 8px 8px 0px 0px;
-    width: auto;
-    height: 63.14px;
-    margin-top: 18px;
-}
-
-.container-main .contatiner-login .container-form .input-password {
-    background: #FAFAFC;
-    border: 1px solid #E6E6F0;
-    box-sizing: border-box;
-    border-radius: 0px 0px 8px 8px;
-    width: auto;
-    height: 63.14px;
-}
-
-.container-main .contatiner-login .container-form .container-options {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 18px;
-    align-items: center;
-}
-
-.container-main .contatiner-login .container-form .container-options .container-checkbox {
-    display: flex;
-    align-items: center;
-    align-content: flex-start;
-    justify-content: space-between;
-}
-
-.container-main .contatiner-login .container-form .container-options .label-options {
-    font-family: 'Poppins', sans-serif;
-    font-size: 12px;
-    line-height: 24px;
-    color: #9C98A6;
-}
-
-.container-main .contatiner-login .container-form .container-options .label-lembra-me {
-    margin-left: 10px;
-}
-
-.container-main .contatiner-login .container-form .container-options .container-checkbox input[type=checkbox] {
-    width: 26.5px;
-    height: 23.68px;
-    background: #FFFFFF;
-    border: 1px solid #E6E6F0 !important;
-    box-sizing: border-box;
-    border-radius: 8px;
-}
-
-.container-main .contatiner-login .container-form .container-options .container-checkbox input[type=checkbox]:checked {
-    background: #027373;
-    border: #027373;
-    border-radius: 8px;
-}
-
-.container-main .contatiner-login .container-form .button-entrar {
-    width: auto;
-    height: 55.25px;
-    background: #027373;
-    border-radius: 8px;
-    font-family: Archivo;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 26px;
     color: #FFFFFF;
-    border-color: transparent;
-    margin-top: 20px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 18rem;
+    padding-left: 22rem;
+    padding-bottom: 2rem;
 }
 
-.container-main .contatiner-login .container-form .button-entrar:disabled {
-    background: #DCDCE5;
-    border-radius: 8px;
+#page-login header strong {
+    font-size: 7.2rem;
+}
+
+#page-login header p {
+    font-size: 4.8rem;
+    letter-spacing: 0.08em;
+    max-width: 60rem;
+    line-height: 6.3rem;
+}
+
+#page-login main {
+    width: 36%;
+    background: #F6F0F0;
+    padding-top: 17rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+#page-login main legend {
+    font-weight: 600;
+    font-size: 3.6rem;
+    color: #027373;
+    margin-bottom: 5.8rem;
+}
+
+#page-login main form .container-input {
+    position: relative;
+    margin-bottom: 3.6rem;
+}
+
+#page-login main form .container-input label {
+    position: absolute;
+    left: 2rem;
+    top: 2.5rem;
+    font-family: Poppins;
+    color: #C1BCCC;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.is-focused {
+    top: 0.6rem !important;
+    font-size: 1.2rem !important;
+}
+
+.is-occupy {
+    border: 0.2rem solid #027373 !important;
+}
+
+#page-login main form .container-input input {
+    background: #FAFAFC;
+    height: 7.2rem;
+    width: 100%;
+    border: 0.1rem solid #E6E6F0;
+    border-radius: 0.8rem;
+    padding-left: 2rem;
+}
+
+#page-login main form .container-input input:focus::after {
+    border: 0.2rem solid #027373 !important;
+}
+
+#page-login main form .container-input:focus-within::after {
+    width: 2px;
+    height: calc(100% - 2rem);
+    content: '';
+    background: #E14B56;
+    position: absolute;
+    left: 0.1rem;
+    bottom: 1rem;
+}
+
+#page-login main form .container-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3.6rem;
+}
+
+#page-login main form .container-options label {
+    font-family: Poppins;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
     color: #9C98A6;
+}
+
+#page-login main form .container-options .container-checkbox {
+    display: flex;
+}
+
+#page-login main form .container-options .container-checkbox label {
+    margin-left: 1rem;
+}
+
+#page-login main form .container-options .container-checkbox input[type=checkbox] {
+    all:unset;
+    display: block;
+    height: 24px;
+    width: 24px;
+
+    background: #FFFFFF;
+    border: 2px solid #E6E6F0;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+#page-login main form .container-options .container-checkbox input[type=checkbox]:checked {
+    background-image: url('../img/svg/selected.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    border:0;
+}
+
+#page-login main form .button-entrar {
+    font: 600 2rem Archivo;
+    color: #fff;
+    background: #E6E6F0;
+    border: 0.1rem solid #E6E6F0;
+    box-sizing: border-box;
+    border-radius: 0.8rem;
+    width: 100%;
+    height: 5.6rem;
+}
+
+#page-login main form .button-entrar:enabled {
+    background: #027373;
+}
+
+@media screen and (max-height: 900px) {
+    :root {
+        font-size: 50%;
+    }
+    #page-login header {
+        /* padding-top: 10rem; */
+    }
+}
+
+@media screen and (max-height: 750px) {
+    :root {
+        font-size: 45%;
+    }
+    #page-login header {
+        /* padding-top: 7rem; */
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #page-login header {
+        padding-left: 15rem;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    #page-login header {
+        padding-left: 10rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    :root {
+        font-size: 50%;
+    }
+    #page-login header {
+        padding-left: 5rem;
+    }
 }

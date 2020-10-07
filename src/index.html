@@ -7,29 +7,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container-main">
-        <div class="container-header">
-            <span class="label-title">Monitora.com</span>
-            <span class="label-description">Tornando seu monitoramento mais descomplicado</span>
-            <img class="image-principal" src="../images/svg/ImagemDesafio2.svg" alt="logo-monitora" title="Logo da monitora">
-        </div>
-        <div class="contatiner-login">
-            <span class="label-login">Fazer login</span>
-            <form class="container-form">
-                <!-- <label class="label-input" for="email">E-mail</label> -->
-                <input class="input-email" type="email" name="email" id="email">
-                <!-- <label class="label-input" for="email">Senha</label> -->
-                <input class="input-password" type="password" name="senha" id="password">
+    <div id="page-login">
+        <header>
+            <strong class="label-title">Monitora.com</strong>
+            <p>Tornando seu monitoramento mais descomplicado</p>
+            <img style="width: 60%;" class="image-principal" src="../img/svg/ImagemDesafio2.svg" alt="logo-monitora" title="Logo da monitora">
+        </header>
+        <main>
+            <legend class="label-login">Fazer login</legend>
+            <form>
+                <div class="container-input">
+                    <label class="label-input" for="email">E-mail</label>
+                    <input class="input-email" type="email" name="email" id="email">
+                </div>
+                <div class="container-input">
+                    <label class="label-input" for="email">Senha</label>
+                    <input class="input-password" type="password" name="senha" id="password">
+                </div>
                 <div class="container-options">
                     <div class="container-checkbox">
                         <input class="input-checkbox" type="checkbox" name="lembrarMe" id="lembrarMe" value="lembrarMe">
                         <label class="label-options label-lembra-me" for="lembraMe">Lembrar-me</label>
                     </div>
-                    <label class="label-options">Esqueci minha senha</label>
+                    <a href="#"><label class="label-options">Esqueci minha senha</label></a>
                 </div>
                 <input class="button-entrar" type="submit" value="Entrar">
             </form>
-        </div>
+        </main>
     </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
